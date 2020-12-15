@@ -1,0 +1,306 @@
+<html>
+<head><title>Home_Profile</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+		body
+		{
+			background-image: url('3.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+  			background-size: cover;
+  			height: 100%;
+			margin: 0; 
+			height: 100%;
+			font-family: tahoma;
+			text-decoration: none;
+		}
+		header
+		{
+			background-color: #06d6a0;
+			position: fixed;
+			width: 100%;
+			height: 80px;
+			top: 0;
+			margin: 0px auto;
+			padding: 10px;
+			box-sizing: border-box;
+			z-index: 2;
+		}
+		.name
+		{
+			font-family: Candara;
+			color: #000;
+			height: 30px;
+			font-size: 25px;
+			line-height: 60px;
+			padding: 0px 75px;
+			text-align: center;
+			box-sizing: border-box;
+			float: left;
+			font-weight: 700;
+			text-decoration: none;
+		}
+		.img
+		{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 20px;
+			left: 50px;
+			border: 1px;
+			border-color: #52b788;
+			border-radius: 50%;
+		}
+		.box1
+		{
+			background-color: #06d6a0;
+			position: fixed;
+			width: 350px;
+			height: 500px;
+			margin: 150px 0;
+			padding-left: 0 100px;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.box2
+		{
+			background-color: #beffc7;
+			position: absolute;
+			top: 185px;
+			left: 100px;
+			width: 300px;
+			height: 400px;
+			margin: 20px 100px;
+			padding-right: 0 80px;
+			padding: 50px 50px;
+			box-sizing: border-box;
+			box-shadow: 0 5px 15px rgba(0,0,0,1);
+		}
+		.head
+		{
+			position: fixed;
+			right:10px;
+			padding: 0px 75px;
+		}
+		.head a
+		{
+			font-family: Courier New;
+			text-decoration: none;
+			padding: 10px 30px;
+			position: relative;
+			font-size: 16px;
+			color: white;
+			top:20px;	
+		}
+		a.active, .head a:hover
+		{
+			color: #000;
+			background-color: #fff;
+			border: 0px;
+			margin: 0px;
+			border-top-left-radius: 20px ;
+			border-top-right-radius: 20px ;
+			border-bottom-right-radius: 20px ;
+			border-bottom-left-radius: 20px ;
+			
+		}
+		.intro1
+		{
+			font-family: Courier New;
+			font-size: 16px;
+			position: relative;
+			top: 160px;
+			left: 60px;
+			float: center;
+			color: #403d39;
+		}
+		.intro2
+		{
+			font-family: Comic Sans MS;
+			font-size: 25px;
+			position: relative;
+			top: 135px;
+			left: 20px;
+			float: center;
+			color: #403d39; 
+		}
+		.designation
+		{
+			font-family: Courier New;
+			font-size: 15px; 
+			position: relative;
+			top: 115px;
+			left: 65px;
+			text-align: left;
+			color: #06d6a0; 
+		}
+		.load
+		{
+			font-family: Courier New;
+			text-decoration: none;
+			position: relative;
+			font-size: 15px;
+			padding: 7px;
+			position: relative;
+			top: 100px;
+			left: 45px;
+			color: white;
+			color: #fff;
+			background-color: #06d6a0;
+			border: 0px;
+			margin: 5px;
+			border-top-left-radius: 25px ;
+			border-top-right-radius: 25px ;
+			border-bottom-right-radius: 25px ;
+			border-bottom-left-radius: 25px ;
+		}
+		.load:hover
+		{
+			text-decoration: none;  
+			color: #000;
+			background-color: #fff;
+		}
+		.box4
+		{
+			background-color: #06d6a0;
+			opacity: 10%;
+			position: absolute;
+			width: 800px;
+			height: 800px;
+			margin: 50px 0px;
+			top: 5px;
+			right: 110px;
+			padding: 0px;
+			box-sizing: border-box;
+			border-radius: 50%;
+		}
+		.foot
+		{
+  			border: 1px ;
+  			box-shadow: 0px 5px 5px rgba(0,0,0,1) inset;
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			padding: 0px 0px;
+			background-color: #06d6a0;
+			color: #000;
+			font-family: Courier New;
+			text-align: center;
+			padding: 0px 0px;
+			font-size: 17px;
+		}
+		.social
+		{
+			margin: 0px;
+			right: 0px;
+			position: absolute;
+			bottom: 0px;
+			padding: 0px 75px;
+		}
+		.social ul li
+		{
+			display: inline-block;
+		}
+		.social ul li a
+		{
+			text-decoration: none;
+		}	
+		.fa 
+		{
+  			padding: 10px;
+  			font-size: 20px;
+  			width: 20px;
+  			text-align: center;
+  			text-decoration: none;
+  			border-radius: 50%;
+		}
+
+		.fa-facebook 
+		{
+  			background: #3B5998;
+  			color: white;
+		}
+		.fa-facebook:hover
+		{
+  			background: white;
+  			color: #3B5998;
+		}
+		.fa-twitter 
+		{
+  			background: #55ACEE;
+  			color: white;
+		}
+		.fa-twitter:hover
+		{
+  			background: white;
+  			color: #55ACEE;
+		}
+		.fa-linkedin 
+		{
+  			background: #007bb5;
+  			color: white;
+		}
+		.fa-linkedin:hover
+		{
+  			background: white;
+  			color: #007bb5;
+		}
+		.fa-instagram 
+		{
+  			background: #d6249f;
+  			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+ 			color: white;
+		}
+		.fa-instagram:hover
+		{
+  			background: white;
+  			color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+ 			color: #d6249f;
+		}
+		.fa-github
+		{
+			background: #333;
+  			color: white;
+		}
+		.fa-github:hover
+		{
+			background: white;
+  			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="Personal Data.html" class="name">Brahmaduttan .</a>
+    	<div class="head">
+		 		<a href="Personal Data.html" class="active">Home</a>
+		 		<a href="about_me.html">About Me</a>
+		 		<a href="career.html">Career</a>
+		 		<a href="resume.html">Resume</a>
+		 		<a href="contact.html">Contact</a>
+		</div>
+    </header>
+    <section>
+    	
+    </section>
+    <section class="foot">
+    	<div>
+    		<p class="copyright">© 2020 by Brahmaduttan.</p>
+    	</div>
+    	<div class="social">
+    		<ul>
+    			<li>
+    				<a href="https://www.facebook.com/Brahmaduttan.s/" target="_blank" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/SBrahmaduttan" target="_blank" class="fa fa-twitter"></a>
+					<a href="https://www.linkedin.com/in/brahmaduttan-s-615192196/" target="_blank" class="fa fa-linkedin"></a>
+    				<a href="https://www.instagram.com/brahmaduttan_s/" target="_blank" class="fa fa-instagram"></a>
+    				<a href="https://github.com/brahmaduttan" target="_blank" class="fa fa-github"></a>
+    			</li>
+    		</ul>
+    	</div>
+    </section>
+</body>
+</html>
